@@ -1,0 +1,131 @@
+
+body{
+    
+    padding: 0;
+}
+#container1{
+    width: 20vw;
+    height: 65vh;
+   
+    border:1px;
+    
+    border-style: solid;
+   
+    
+    border-radius: 9px;
+    background-color:rgb(123, 237, 159);
+}
+table{
+    margin: 50px 100px 100px 250px;
+    border-style: solid;
+    padding: 20px;
+    background-color:rgb(164, 176, 190);
+   
+}
+
+#container2{
+    width: 43vw;
+    height: 65vh;
+   margin-left: 14px;
+    border:1px;
+    
+    border-style: solid;
+   
+    
+    border-radius: 9px;
+    background-color:rgb(123, 237, 159);
+}
+/* button{
+    border-radius: 6px;
+    padding: 5px 60px 5px 60px;
+    margin-left: 22px ;
+    margin-bottom: 5px;
+
+} */
+.head1{
+    border: 2px;
+    border-style: hidden;
+    
+    border-radius: 19px;
+    background-color: bisque;
+    position: relative;
+    text-align: center;
+}
+.student-id-lbl1{
+    position: absolute;
+    width: 150px;
+    height:25px;
+  
+    margin-left: 30px;
+    margin-top: 20px;
+    
+    background-color: rgb(39, 60, 117);
+    color: white;
+    
+    
+    
+    
+}
+.id{
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 20px;
+    color: white;
+}
+.name{
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 50px;
+    color: rgb(123, 63, 63);
+    font-size: xx-large;
+   
+}
+.lblAge{
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 100px;
+    color:blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+.age{
+    margin-left: 115px;
+}
+
+.lblAddress{
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 130px;
+    color:blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+.address{
+    margin-left: 135px;
+}
+.list-edit{
+   margin:20px;
+}
+.list-edit-2{
+    margin-bottom: 5px; 
+}
+.lblPrfMarks{
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 160px;
+    color:blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+.prfMarks{
+    margin-left: 150px;
+}
+
+.lblDbmsMarks{
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 190px;
+    color:blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.dbmsMarks{
+    margin-left: 170px;
+}
