@@ -8,10 +8,61 @@
 </head>
 
 <body>
-    <table border="0" id="tbl-student">
-    
+    <table border="0">
+        <tr>
+            <td>
+                <div id="container1">
+                    <p class="head1">
+                        Student Name List <br>Grade 10
+                    </p>
+                    <div role="tabpanel" class="list-edit">
+                        <!-- <button id="btn-akindu">Akindu</button> -->
+                        <!-- List group -->
+                        <div class="list-group" id="myList" role="tablist">
+                            <a class="list-group-item list-group-item-action active list-edit-2" id="btn-akindu"  data-bs-toggle="list" href="Akindu"
+                                role="tab">Home</a>
+                            <a class="list-group-item list-group-item-action list-edit-2" data-bs-toggle="list" href="#profile"
+                                role="tab">Profile</a>
+                            <a class="list-group-item list-group-item-action list-edit-2" data-bs-toggle="list" href="#messages"
+                                role="tab">Messages</a>
+                            <a class="list-group-item list-group-item-action list-edit-2" data-bs-toggle="list" href="#settings"
+                                role="tab">Settings</a>
+                            <a class="list-group-item list-group-item-action list-edit-2" data-bs-toggle="list" href="#settings"
+                                role="tab">Settings</a>
+                            <a class="list-group-item list-group-item-action list-edit-2" data-bs-toggle="list" href="#settings"
+                                role="tab">Settings</a>
+                            <a class="list-group-item list-group-item-action list-edit-2" data-bs-toggle="list" href="#settings"
+                                role="tab">Settings</a>
+                        </div>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!-- <div class="tab-pane active" id="home" role="tabpanel">...</div>
+                            <div class="tab-pane" id="profile" role="tabpanel">...</div>
+                            <div class="tab-pane" id="messages" role="tabpanel">...</div>
+                            <div class="tab-pane" id="settings" role="tabpanel">...</div> -->
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div id="container2">
+                    <span class="student-id-lbl1"> Student Id : </span>
+                    <span class="id studentid"></span>
+                    <span class="name studentName"></span>
+                    <span class="lblAge">Age : </span>
+                    <span class="lblAge age studentAge"></span>
+                    <span class="lblAddress ">Address :</span>
+                    <span class="lblAddress address studentAddress"></span>
+                    <span class="lblPrfMarks ">Grade : </span>
+                    <span class="lblPrfMarks prfMarks studentGrade"></span>
+                    
+
+                </div>
+            </td>
+        </tr>
     </table>
-    <script src="/js/app.js"></script>
+    <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

@@ -11,13 +11,13 @@ body{
     border-radius: 9px;
     background-color:rgb(123, 237, 159);
 }
-/*table{
+table{
     margin: 50px 100px 100px 250px;
     border-style: solid;
     padding: 20px;
     background-color:rgb(164, 176, 190);
    
-}*/
+}
 
 #container2{
     width: 43vw;
@@ -28,13 +28,13 @@ body{
     border-radius: 9px;
     background-color:rgb(123, 237, 159);
 }
-/* button{
+button{
     border-radius: 6px;
     padding: 5px 60px 5px 60px;
     margin-left: 22px ;
     margin-bottom: 5px;
 
-} */
+} 
 .head1{
     border: 2px;
     border-style: hidden;
