@@ -1,54 +1,39 @@
 
-let id = document.querySelector(".studentid");
-let name = document.querySelector(".studentName");
-let age = document.querySelector(".studentAge");
-let address = document.querySelector(".studentAddress");
-let grade = document.querySelector(".studentGrade");
+const id = document.querySelector(".studentid");
+const name = document.querySelector(".studentName");
+const age = document.querySelector(".studentAge");
+const address = document.querySelector(".studentAddress");
+const grade = document.querySelector(".studentGrade");
+const studentTable = document.getElementById("tbl-student");
+const btnAkindu = document.querySelectorAll(".btn-akindu");
 
+let data = null;
 
-let studentTable = document.getElementById("tbl-student");
-let btnAkindu = document.getElementById("btn-akindu");
+const getData = (name) =>{
+     let fed = fetch(`http://localhost:8080/get-students/${name}`).then(response => response.json())
+     return fed;
+};
 
-btnAkindu.addEventListener("click", () => {
-    fetch("http://localhost:8080/get-students/akindu")
-        .then(response => response.json())
-        .then(res => {
+let prevN = "";
+let ob = null;
+btnAkindu.forEach((btn) => {
+btn.addEventListener("click", (e) => {
+    let atr=e.target.getAttribute('data-student-name');
+    if(prevN == atr){
+        ob = (data === null ? data = getData(atr) : data)
+    }else{
+        ob = getData(atr);
+    }     
+        ob.then(res => {
             res.forEach(element => {
-                console.log(element.id);
-                id.textContent = element.id;
-                name.textContent = element.name;
-                age.textContent = element.age;
-                address.textContent = element.address;
-                grade.textContent = element.grade;
-            
-
-            });
-            studentTable.innerHTML=id;
-        })
-        .catch(error => {
-            console.error("Error fetching data:", error);
-        });
+                id.textContent = element['id'];
+                name.textContent = element['name'];
+                age.textContent = element['age'];
+                address.textContent = element['address'];
+                grade.textContent = element['grade'];
+            });   
+        }) 
 });
+})
 
 
-// fetch("http://localhost:8080/get-students")
-// .then(response =>response.json())
-// .then(res =>{
-//     let tblBody=`    <tr>
-//     <td>Student Id</td>
-//     <td>Name</td>
-//     <td>Age</td>
-//     <td>Address</td>
-//     <td>Grade</td>
-// </tr>`
-// res.forEach(element => {
-//    tblBody+=`    <tr>
-//    <td>${element.id}</td>
-//    <td>${element.name}</td>
-//    <td>${element.age}</td>
-//    <td>${element.address}</td>
-//    <td>${element.grade}</td>
-// </tr>` ;
-// });
-// studentTable.innerHTML=tblBody;
-// })
