@@ -16,6 +16,10 @@ public class StudentServiceImpl implements StudentService{
     public ArrayList<Student> getStudent(String name) {
         listStudent.add(new Student("S001", "Akindu", 21, "Panadura", "5"));
         listStudent.add(new Student("S002", "Havindu", 20, "Colombo", "6"));
+        listStudent.add(new Student("S003", "Sharada", 22, "Kalutara", "7"));
+        listStudent.add(new Student("S004", "Chamudi", 20, "Panadura", "7"));
+        listStudent.add(new Student("S005", "Thamali", 20, "Gampha", "8"));
+        listStudent.add(new Student("S006", "Sethum", 20, "Galle", "5"));
         ArrayList<Student> list = new ArrayList<>();
 //        list.add(new Student("S001", "Akindu", 21, "Panadura", "5"));
 //        list.add(new Student("S002", "Chamudi", 20, "Colombo", "6"));
